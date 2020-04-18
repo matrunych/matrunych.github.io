@@ -1,0 +1,182 @@
+
+body {
+
+  margin: 0;
+  padding: 10px 8px;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+background-color: #E6E6FA;
+
+
+}
+.flex-container {
+    display: flex;
+}
+.flex-container2 {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.flex-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  text-align: center;
+  width: 100px;
+  height:50px;
+  margin: 0 5px;
+}
+.box-1 {
+  width:50px;
+  background: #DA70D6;
+}
+.box-2 {
+  width:70px;
+  background: #BA55D3;
+}
+.box-3 {
+  width:90px;
+  background: #9932CC;
+}
+.box-4 {
+  background: #800080;
+}
+
+.box-1-2 {
+  flex-grow: 1;
+  width:50px;
+  background: #DA70D6;
+}
+.box-2-2 {
+  flex-grow: 2;
+  width:70px;
+  background: #BA55D3;
+}
+.box-3-2 {
+  flex-grow: 3;
+  width:90px;
+  background: #9932CC;
+}
+.box-4-2 {
+  flex-grow: 4;
+  background: #800080;
+}
+
+mark {
+  background-color: #DCDCDC;
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: 0 auto;
+    /*background-color:  #DA70D6;*/
+
+    }
+}
+
+header {
+  display: flex;
+  align-items: center;  Vertically align 
+  padding: 5px 16px;
+  color: white;
+  background-color: #483D8B;
+  border-radius: 8px;
+}
+
+header > a:link,
+header > a:visited,
+header > a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+header > a:hover {
+  text-decoration: underline;
+}
+
+.link--home {
+  flex-grow: 1;
+  font-size: 2em;
+}
+
+.link--about {
+  flex-grow: 1;
+  font-size: 1em;
+  text-align: right;
+}
+
+main {
+  padding: 5px 16px;
+  word-wrap:break-word;
+}
+
+footer {
+  padding: 35px 0 25px 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #000080;
+}
+
+h1,
+h2,h3, h4,h5,h6 {
+  font-family: 'Roboto Slab', sans-serif;
+  margin: 25px 0 2px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1 > a:link,
+h1 > a:visited {
+  text-decoration: none;
+}
+
+h1 > a:hover {
+  color: #191970;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.5em;
+}h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1.5em;
+}
+a:link,
+a:visited {
+  color: #20399d;
+}
+
+a:hover {
+  color: #20399daa;
+}
+
+
+article img {
+  width: 100%;
+  height: auto;
+}
+table {
+  border: 1px dotted #CCC
+}
+#average table{margin-left:23px;margin-right:14px}
+#averfoot table{text-align:justify;width:100%;line-height:170%;margin:19px 0 0;padding:0}
+.code { margin-right:15px}
+.code td{ border: 1px solid #bcbcbc; width: 716px; padding: 8px 17px 8px 17px; background-color:#FFe; font-size: 12px;
+
+
+

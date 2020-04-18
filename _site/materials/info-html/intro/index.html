@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML and CSS</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">HTML and CSS</a>
+  <a href="/about-html/" class="link--about">HTML</a>
+  <a href="/about-css" class="link--about">CSS</a>
+
+  <a href="/About" class="link--about">About me</a>
+</header>
+<main>
+  <article>
+  <h1>What is HTML?</h1>
+  <img src="/images/html5.png" alt="HTML5 Icon" width="128" height="128">
+  <!-- Excerpt Start -->
+<!-- Excerpt End -->
+<p>The definition of HTML is <strong>HyperText Markup Language</strong>.</p>
+
+<p>
+HyperText is the method that is used for moving around on the web — by clicking on special text called hyperlinks which bring you to the next page. 
+
+<p>The fact that it is hyper just means it is not linear — you can go to any place on the Internet whenever you want by clicking on links — there is no set order to do things in.</p>
+<p>Markup is what HTML tags do to the text inside them. They mark it as a certain type of text (for example italicised text).
+HTML  has code-words and syntax like any other language.</p>
+
+<p>HTML is <strong>not a programming language</strong>, it does not have the ability to create dynamic functions. Instead, it allows you to organize and format documents, similar to Microsoft Word.</p>
+
+<p>
+While working with HTML, we use simple code structures (tags and attributes) to lay out the website page. For example, we can create a paragraph by placing the attached text in the source <kbd>&lt;p&gt;</kbd> tag and closing <kbd>&lt;/p&gt;</kbd>.</p>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+&lt;p&gt;Adding paragraph in HTML.&lt;/p&gt;<br>
+&lt;br&gt;&lt;p&gt;You can have more than one! &lt;/p&gt;&lt;/br&gt;<br>
+</span></code></td></tr></tbody></table>
+
+<div id="toc_container" class="toc_container"><ul class="toc_list">
+  <li><a href="#-HTML">History of HTML</a></li>
+  <li><a href="#-HTML-2">How does it work?</a></li>
+  <li><a href="/materials/info-html/tags/">Most used HTML Tags</a></li>
+  <li><a href="/materials/info-html/forms/">How to create HTML form</a></li>
+  </ul></div>
+
+
+<h2> <span id="-HTML">History of HTML</span></h2>
+<p>HTML was invented by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">Tim Berners-Lee</a>, a physicist at the CERN Research Institute in Switzerland. He came up with the idea of ​​an Internet hypertext system.</p>
+
+<p>Hypertext means text containing links to other texts that viewers can receive immediately. He published the first version of HTML in 1991, consisting of 18 HTML tags. Since then, each new version of the HTML language has appeared with the markup of new tags and attributes (tag modifiers).</p>
+
+<p>According to the Mozilla Developer Network’s HTML Element Reference, there are currently 140 HTML tags, although some are already outdated and are not supported by modern browsers.</p>
+
+<p>Due to the rapid growth in popularity, HTML is now considered the official web standard. HTML specifications are maintained and developed by the World Wide Web Consortium (W3C). You can check the latest state of the language at any time on the W3C website.</p>
+
+<p>HTML5 is the biggest language update, that was in 2014. Some new semantic tags have been added to the markup, which show the meaning of their own content, such as &lt;article&gt;, &lt;header&gt; and &lt;footer&gt;.</p>
+
+<h2><span id="-HTML-2">How does it work?</span></h2>
+
+<p>HTML documents are files that end with the extension .html or .htm. You can view it using any web browser (e.g. Google Chrome, Safari or Mozilla Firefox). The browser reads the HTML file and displays its contents so that Internet users can view it.</p>
+
+<p>Typically, an average website includes several different HTML pages. For example: home pages, regular pages, contact pages will have separate HTML documents.</p>
+
+<p>Each HTML page consists of a set of tags (also called elements) that you can call the building blocks of web pages. They create a hierarchy that structures content into sections, paragraphs, headings, and other blocks of content.</p>
+
+<p>Most HTML elements have open and close, which use the &lt;tag&gt;  &lt;/tag&gt; syntax.
+</p>
+
+<p>Example of code:</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+  &lt;div&gt;<br>
+&lt;h1&gt;Main title&lt;/h1&gt;<br>
+&lt;h2&gt;Second title &lt;/h2&gt;<br>
+&lt;p&gt;Text&lt;/p&gt;<br>
+&lt;h2&gt;Second title &lt;/h2&gt;<br>
+&lt;p&gt;Text with hyperlink &lt;a&gt; href="somelink.com"&lt;/a&gt;&lt;/p&gt;<br>
+
+  &lt;/div&gt;<br>
+
+</span></code></td></tr></tbody></table>
+
+<ul><li>The most important element is a simple separation (<em><strong>&lt;div&gt; &lt;/div&gt;</strong></em>), which you can use to mark up large sections of content.</li><li>It contains a heading(<strong><em>&lt;h1&gt; &lt;/h1&gt;</em></strong>), a subheading (<em><strong>&lt;h2&gt; &lt;/h2&gt;</strong></em>),  two paragraphs (<em><strong>&lt;p&gt; &lt;/p&gt;</strong></em>) and image (<em><strong>&lt;img&gt;</strong></em>).</li><li>The second paragraph contains a link (<em><strong>&lt;a&gt; &lt;/a&gt;</strong></em>) with the href attribute, which contains the destination URL.
+The image tag also has two attributes: src for the image path and <em><strong>alt</strong> </em>for the image description.</li></ul>
+
+<p>You can find more tags <a href="/materials/info-html/tags/">here</a> </p>
+</article>
+</main>
+<footer>&copy; HTML and CSS</footer>
+</body>
+</html>

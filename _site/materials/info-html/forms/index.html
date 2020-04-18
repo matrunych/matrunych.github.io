@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML and CSS</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">HTML and CSS</a>
+  <a href="/about-html/" class="link--about">HTML</a>
+  <a href="/about-css" class="link--about">CSS</a>
+
+  <a href="/About" class="link--about">About me</a>
+</header>
+<main>
+  <article>
+  <h1>HTML Forms</h1>
+  <!-- Excerpt Start -->
+<!-- Excerpt End -->
+<h2>What is HTML Form</h2>
+<p><strong> HTML forms</strong> are used to control collected information from website visitors.
+
+Web forms consist of a set of text fields, buttons, lists, and other controls that are activated with a mouse click. Technically, the forms transmit data from the user to the remote server.
+</p>
+<p>All form starts with tag <strong>&lt;form&gt;</strong> and ends with tag <strong>&lt;/form&gt;</strong>.</p>
+
+<p>Parameter <strong>method </strong>indicates the method of data transfer.</p>
+
+<p> There are two methods: <strong> GET </strong> and <strong> POST. GET </strong>: using this method, the data will be added to the end of the site address (URL), and we will see it in the address bar. </p>
+
+<p> If we transmit using the <strong>POST</strong> method, the data will be transmitted hidden from the user. </p>
+
+
+<h2 id="html-forms-1" style="clear:right">Example of HTML form | Sign to website</h2>
+<form name="f1" method="get" action="/materials/info-html/forms/">
+<p><input name="link" type="hidden" value="index.html">
+Login:<br>
+<input name="login" type="text" size="25" maxlength="30" value="Nick"><br>
+
+Password:<br>
+<input name="pd" type="password" size="25" maxlength="30" value=""><br>
+
+<input name="remember" type="checkbox" value="yes"> 
+Remember me<br>
+<input type="submit" name="enter" value="Sign"></p>
+
+</form>
+
+<p>Code</p>
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+&lt;title&gt;One of the examples of HTML form&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>    
+&lt;form  name="f1" method="get" action="/materials/info-html/forms/"&gt;<br> 
+&lt;input name="link" type="hidden" value="index.html" /&gt;<br>   
+Login: &lt;br /&gt;<br>
+&lt;input name="login" type="text" size="25" maxlength="30" value="Nick" /&gt; &lt;br /&gt;<br>
+Password: &lt;br /&gt;<br>&lt;input name="pd" type="password" size="25" maxlength="30" value="" /&gt; &lt;br /&gt;<br>
+&lt;input name="remember" type="checkbox" value="yes" /&gt;
+Remember me &lt;br /&gt;<br>
+&lt;input type="submit" name="enter" value="Вход" /&gt;<br>
+&lt;/form&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</span></code></td></tr></tbody></table>
+
+<p class="p3">Tags and attributes</p>
+<ul>
+ <li><kbd>&lt;form&gt; &lt;/form&gt;</kbd> – defines form.</li>
+  <li><kbd>name=""</kbd> –  defines name of form.</li> 
+ <li><kbd>method=""</kbd> – defines the method of sending data from the form. Method: <kbd>"GET"</kbd> (by default) and <kbd>"POST"</kbd>. <kbd>"POST"</kbd> is used more often, since it allows the transfer of large amounts of data.</li>
+  <li><kbd>action=""</kbd> – defines the url by which data is sent for processing. In our case,<kbd>/materials/info-html/forms/</kbd>. Also there can be an email <kbd>action="mailto:ab-w.net"</kbd>.</li>
+ <li><kbd>&lt;input /&gt;</kbd> – оdefine such form elements as buttons, switches, text fields for data input.</li>
+ 
+ <li><kbd>type="text"</kbd> – defines a text field for data input.</li>
+ <li><kbd>type="password"</kbd> –  defines the field for entering the password, while the text is displayed in the form of asterisks or circles.</li>
+ <li><kbd>type="checkbox"</kbd> – defines the switch.</li>
+ <li><kbd>type="submit"</kbd> – defines the button..</li>
+ <li><kbd>type="hidden"</kbd> – defines a hidden form element - is used to transfer additional information to the server.</li>
+  <li><kbd>size="25"</kbd>  – the length of the text field in characters.</li>
+  <li><kbd>maxlength="30"</kbd>  –  the maximum number of characters entered.</li>
+ <li><kbd>value=""</kbd> – defines the value that will be sent for processing if it relates to radio buttons or switches. The value of this attribute in the text box or button will be shown as, for example, <kbd>Nick</kbd> or <kbd>Login</kbd> in the example above.</li></ul>
+
+<h3 id="html-forms-2">Example of HTML form | Comments</h3>
+
+<form action="" method="post" name="commentform" id="commentform">
+<p>
+<input type="text" name="author" id="author" value="" size="25">
+<small>Name</small>
+</p>
+<p>
+<input type="text" name="email" id="email" value="" size="25">
+<small> e-mail</small>
+</p>
+<p>
+<textarea name="comment" id="comment" cols="48" rows="8"> </textarea>
+</p>
+<p>
+<input name="submit" type="submit" id="submit" value="Send">
+<input type="hidden" name="comment_post" value="300">
+</p>
+</form>
+<p>Code</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+&lt;title&gt;Example of HTML form&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>    
+&lt;form action="/materials/info-html/forms/" method="post" name="commentform" id="commentform"&gt;<br>
+&lt;p&gt;&lt;input type="text" name="author" id="author" value="" size="25" /&gt;<br>
+&lt;small&gt; Name&lt;/small&gt;<br>&lt;/p&gt;<br>
+
+&lt;p&gt;&lt;input type="text" name="email" id="email" value="" size="25"  /&gt;<br>
+&lt;small&gt; e-mail&lt;/small&gt;<br>&lt;/p&gt;<br>
+&lt;p&gt;&lt;textarea name="comment" id="comment" cols="48" rows="8"&gt; &lt;/textarea&gt;<br>&lt;/p&gt;<br>
+&lt;p&gt;&lt;input name="submit" type="submit" id="submit"  value="Send" /&gt;<br>
+ 
+&lt;/p&gt;<br>
+
+&lt;/form&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt; 
+ </span></code></td></tr></tbody></table>
+
+
+<p class="p3">Tags and attributes</p>
+
+<ul>
+ <li><kbd>&lt;textarea&gt; &lt;/textarea&gt;</kbd> –  defines text field in a form.</li>
+   
+ <li><kbd>cols=""</kbd> –  defines number of columns of text field.</li>
+ 
+  <li><kbd>rows=""</kbd> –  defines number of rows of text field.</li></ul>
+
+
+<h4 id="html-forms-3" style="clear:right">Example of HTML form | Drop-down list</h4>
+
+<form action="" method="post" name="drop_down_box">
+<p><select name="menu" size="1">
+<option value="first">First choicr</option>
+<option selected="selected" value="second">Second choice</option>
+<option value="third">Third choice</option>
+<option value="fourth">Fourth choice</option>
+</select></p>
+</form>
+
+<p>Code</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white"> 
+&lt;title&gt;Example of HTML form&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>    
+&lt;form action="/materials/info-html/forms/" method="post" name="drop_down_box"&gt;<br>
+&lt;select name="menu"     size="1"&gt;<br>
+&lt;option value="first"&gt;First choice&lt;/option&gt;<br>
+&lt;option selected="selected" value="second"&gt;Second choice&lt;/option&gt;<br>
+&lt;option value="third"&gt;Third choice&lt;/option&gt;<br>
+&lt;option value="fourth"&gt;Fourth choice&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;/form&gt; 
+</span></code></td></tr></tbody></table>
+
+<p class="p3">Tags and attributes</p>
+<ul>
+<li><kbd>&lt;select&gt; &lt;/select&gt;</kbd> – define a list with positions for selection.</li>
+ 
+<li><kbd>size=""</kbd> –   determines the number of visible positions in the list. If the value is 1, we are dealing with a drop-down list.</li>
+ 
+<li><kbd>&lt;option&gt; &lt;/option&gt;</kbd> –  determine the positions of the list.</li>
+ <li><kbd>value=""</kbd> –   contains the value that the form will send to the specified url for processing.</li>
+<li><kbd>selected="selected"</kbd> –  highlights the position of the list as an example.</li></ul>
+
+<h5 id="html-forms-4" style="clear:right">Example of HTML form | Scroll bar list</h5>
+
+<form action="" method="post" name="drop_down_box">
+<p><select name="menu" size="3" multiple="multiple">
+<option value="first">First choice</option>
+<option selected="selected" value="second">Second choice</option>
+<option value="third">Third choice</option>
+<option value="fourth">Fourth choice</option>
+</select></p>
+</form>
+
+<p>Code</p>
+<table class="code"><tbody><tr><td>
+ <code><span class="white"> 
+ &lt;title&gt;Example of HTML form&lt;/title&gt;<br>
+ &lt;/head&gt;<br>
+ &lt;body&gt;<br>    
+&lt;form action="/materials/info-html/forms/" method="post" name="drop_down_box"&gt;<br>
+&lt;select name="menu"    size="3" multiple="multiple"&gt;<br>
+&lt;option value="first"&gt;First choice&lt;/option&gt;<br>
+&lt;option selected="selected" value="second"&gt;Second choice&lt;/option&gt;<br>
+&lt;option value="third"&gt;Third choice&lt;/option&gt;<br>
+&lt;option value="fourth"&gt;Fourth choice&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;/form&gt; 
+</span></code></td></tr></tbody></table>
+
+</article>
+</main>
+
+<footer>&copy; HTML and CSS</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "html&css",
+  "version": "1.0.0",
+  "description": "Website about basics of html and css",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Olena Matrunych",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "moment": "^2.24.0"
+  }
+}

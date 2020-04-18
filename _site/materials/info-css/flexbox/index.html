@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML and CSS</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">HTML and CSS</a>
+  <a href="/about-html/" class="link--about">HTML</a>
+  <a href="/about-css" class="link--about">CSS</a>
+
+  <a href="/About" class="link--about">About me</a>
+</header>
+<main>
+  <h1>Flexbox</h1>
+  <p><strong>CSS Flexbox layout</strong> - technologies for placing blocks on an HTML page</p>
+<p><strong>Flexbox</strong> is designed to optimize the layout of elements, unlike float. It facilitates alignment of elements horizontally and vertically, change of direction and order of display of elements, allows to stretch blocks on all height of the parent or lower them to the bottom edge.</p>
+
+<h2>What is Flexbox?</h2>
+
+<p>Flexbox is useful tool for solving some CSS problems (for example vertical alignment).</p>
+
+<p>Flexbox is needed to make the layers convenient for developer and to work with them in the simplest way. The purpose of ​​flexible markup is to allow the container to change the width / height (and order) of its elements to fill the space available (mainly to accommodate all types and sizes of screens). </p>
+
+
+<p>Flexbox is a full-fledged module, not a separate property, it contains a whole set of properties.
+Some items are designed to work with the parent container "flex container". And others relate to child elements (flex elements).</p>
+<p>The conventional layout system is based on block and line directions, however Flexbox is based on flex-flow directions.</p>
+<img src="/images/flex-2.png" width="700" height="300">
+<p>Let's create flex-container</p>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+	<<kbd>div</kbd>class="flex-container"><br>
+	<<kbd>div</kbd>class="box box-1">First&lt;/div&gt;<br>
+	<<kbd>div</kbd>class="box box-2">Second&lt;/div&gt;<br>
+	<<kbd>div</kbd>class="box box-3">Third&lt;/div&gt;<br>
+	<<kbd>div</kbd>class="box box-4">Fourth&lt;/div&gt;<br>
+&lt;/div&gt;
+
+</span></code></td></tr></tbody></table><br>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+	.flex-container {<br>
+    display: flex;<br>
+}
+
+
+</span></code></td></tr></tbody></table><br>
+
+
+<div class="flex-container">
+    <div class="box box-1">First</div>
+    <div class="box box-2">Second</div> 
+    <div class="box box-3">Third</div> 
+    <div class="box box-4">Fourth</div> 
+</div>
+
+<p><strong>Flex-direction</strong></p>
+<p>There are two axes: main axis and the perpendicular to it.</p>
+<img src="https://s3.tproger.ru/uploads/2017/02/axes.png" width="700" height="300">
+<p>By default, all objects are located along the main axis: left to right. <mark> display: flex property;</mark> makes blocks aligned</p>
+<p>The <mark> flex-direction</mark>  property allows you to rotate the main axis.</p>
+<p>There are several options for <mark>flex-direction</mark>: <mark>row-reverse</mark> and <mark>column-reverse</mark>.</p>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+	.flex-container {<br>
+    display: flex;<br>
+     flex-direction: column-reverse;<br>
+
+}
+
+
+</span></code></td></tr></tbody></table><br>
+<div class="flex-container2">
+    <div class="box box-1">First</div>
+    <div class="box box-2">Second</div> 
+    <div class="box box-3">Third</div> 
+    <div class="box box-4">Fourth</div> 
+</div>
+
+<p><strong>Justify-сontent, align-items</strong></p>
+<p>It can have 5 values.</p>
+<ul>
+	<li>flex-start</li>
+	<li>flex-end</li>
+	<li>center</li>
+	<li>space-between</li>
+	<li>space-around</li>
+</ul>
+<p><mark>justify-сontent</mark> works with main axis and <mark>align-items</mark> works with axis perpendicular to main.</p>
+<p>Align-items can also have 5 values:</p>
+<ul>
+	<li>flex-start</li>
+	<li>flex-end</li>
+	<li>center</li>
+	<li>stretch</li>
+	<li>baseline</li>
+</ul>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+	.flex-container {<br>
+    display: flex;<br>
+      flex-direction: column;<br>
+  justify-content: center;<br>
+  align-items: center;<br>
+
+}
+
+</span></code></td></tr></tbody></table><br>
+
+<div class="flex-container3">
+    <div class="box box-1">First</div>
+    <div class="box box-2">Second</div> 
+    <div class="box box-3">Third</div> 
+    <div class="box box-4">Fourth</div> 
+</div>
+
+<p><strong>Flex-grow</strong></p>
+ <p>It determines the ability of the element to increase in size if necessary. It takes a dimensionless value as a proportion, which determines how much free space an element should occupy inside a container.</p>
+<p>If all elements have the flex-grow property set to 1, then the free space inside the container will be evenly distributed between all elements. If one of the elements has a value of 2, then the element will take up twice as much space as the rest (at least it will try).</p>
+<p>Negative numbers cannot be defined.</p>
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+	.box-1 {<br>
+  flex-grow: 1;<br>
+}<br>
+.box-2 {<br>
+  flex-grow: 2;<br>
+}<br>
+.box-3 {<br>
+  flex-grow: 3;<br>
+}<br>
+.box-4 {<br>
+  flex-grow: 4;<br>
+}<br>
+
+}<br>
+</span></code></td></tr></tbody></table><br>
+
+
+<div class="flex-container">
+    <div class="box1 box-1-2">First</div>
+    <div class="box1 box-2-2">Second</div> 
+    <div class="box1 box-3-2">Third</div> 
+    <div class="box1 box-4-2">Fourth</div> 
+</div>
+
+<p><strong>Flex-shrink</strong></p>
+<p>Determines the ability of the element to decrease size, if necessary.</p>
+<p>Negative numbers cannot be defined. By default it is 1.</p>
+
+<p><strong>Flex</strong></p>
+<p>This is a shorthand for <mark>flex-grow</mark>, <mark>flex-shrink</mark>, and <mark>flex-basis</mark>. The parameters flex-shrink and flex-basis are optional. The default value is set to 0 1.
+It is recommended to use shorthand property rather than specifying values individually.</p>
+
+<h2>Pros of Flex</h2>
+<ul>
+	<li>You  do not require grids of different HTML frameworks</li>
+	<li>Clear and flexiblecontrol of the blocks</li>
+	<li>Solved problem of vertical positioning</li>
+	<li>Support of all modern browsers except Internet Explorer.</li>
+</ul>
+<h2>Cons of Flex</h2>
+<ul>
+	<li>
+		Unable to use under Internet Explorer 9.
+	</li>
+	<li>Internet Explorer 10+ does not understand some of the Flexbox terms.
+</li>
+</ul>
+
+
+
+</main>
+<footer>&copy; HTML and CSS</footer>
+</body>
+</html>

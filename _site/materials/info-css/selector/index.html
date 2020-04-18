@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML and CSS</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">HTML and CSS</a>
+  <a href="/about-html/" class="link--about">HTML</a>
+  <a href="/about-css" class="link--about">CSS</a>
+
+  <a href="/About" class="link--about">About me</a>
+</header>
+<main>
+  <h1>Selectors</h1>
+  <p>Selector is part of a CSS rule that tells the browser which element of a web page CSS style will be applied to.</p>
+<p>This is a sample and formal description of the element or group of elements to which the CSS styles will be applied.</p>
+
+<table id="table-selectors" bgcolor="#ADD8E6" bordercolor=" #0000CD">
+  <thead>
+    <tr>
+      <th>Selector</th>
+      <th>Example</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody id="parentId">
+        <tr>
+      <td><a>active</a>     </td>
+      <td>a:active</td>
+      <td><p>Selects of active link.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>adjacent</a>     </td>
+      <td>div + p</td>
+      <td><p>Selects element <code>&lt;p&gt;</code> , which is located immediately after the <code>&lt;div&gt;</code>.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>after</a>      </td>
+      <td>p::after</td>
+      <td><p>Adds anything after the content of the  <code>&lt;p&gt;</code></p>
+</td>
+    </tr>
+        <tr>
+      <td><a>all</a>     </td>
+      <td>*</td>
+      <td><p>Selects all elements</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute</a>      </td>
+      <td>[target]</td>
+      <td><p>Selects all items that have the target attribute specified.
+</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value</a>     </td>
+      <td>target="_blank"</td>
+      <td><p>Selects allitems with target="_blank"</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value-begin</a>      </td>
+      <td>a[href^="https"]</td>
+      <td><p>Selects all items <code>&lt;a&gt;</code> that have attribute href which starts with "https".</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value-contain</a>     </td>
+      <td>a[href*="somesite"]</td>Selects all links where the href attribute contains the word "w3schools".Selects all Обирає всі посилання в яких атрибут href містить слово "somesite".</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value-contains</a>     </td>
+      <td>[title~=flower]</td>
+      <td><p>Selects all the elements with the title attribute that contain the word flower</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value-end</a>      </td>
+      <td>a[href$=".pdf"]</td>
+      <td><p>Selects all elements <code>&lt;a&gt;</code> where the href attribute value ends with ".pdf"</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>attribute-value-lang</a>     </td>
+      <td>[lang|=en]</td>
+      <td><p>Selects all elements with the lang attribute whose value begins with "en".</p>
+</td>
+    </tr>
+        <tr>
+      <td><a >before</a>     </td>
+      <td>p::before</td>
+      <td><p>Adds anything before the content of the  <code>&lt;p&gt;</code></p>
+</td>
+    </tr>
+        <tr>
+      <td><a>checked</a>     </td>
+      <td>input:checked</td>
+      <td><p>Selects every element <code>&lt;input&gt;</code>  element that is checked.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>class</a>     </td>
+      <td>.intro</td>
+      <td><p>Selection of all items with "intro" class.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a >default</a>      </td>
+      <td>input:default</td>
+      <td><p>Selects an input form that is unassigned.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>disabled</a>      </td>
+      <td>input:disabled</td>
+      <td><p>Selects all disabled input elements.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>element</a>     </td>
+      <td>p</td>
+      <td><p>Selects all items <code>&lt;p&gt;</code>.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a >element-child</a>     </td>
+      <td>div &gt; p</td>
+      <td><p>Selects all items<code>&lt;p&gt;</code> for which the parent element is the <code>&lt;div&gt;</code>.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>empty</a>     </td>
+      <td>p:empty</td>
+      <td><p>Selects item<code>&lt;p&gt;</code> without text and other HTML elements.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>enabled</a>     </td>
+      <td>input:enabled</td>
+      <td><p>Selects all enabled input elements.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>first-child</a>     </td>
+      <td>p:first-child</td>
+      <td><p>Selects all items <code>&lt;p&gt;</code>, that are the first descendant of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>first-letter</a>     </td>
+      <td>p::first-letter</td>
+      <td><p>Selects first letter of each item <code>&lt;p&gt;</code>.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>first-line</a>      </td>
+      <td>p::first-line</td>
+      <td><p>Selects first row of each item <code>&lt;p&gt;</code></p>
+</td>
+    </tr>
+        <tr>
+      <td><a>first-of-type</a>     </td>
+      <td>p:first-of-type</td>
+      <td><p>Selects item<code>&lt;p&gt;</code>,  if it is the first element of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>focus</a>     </td>
+      <td>input:focus</td>
+      <td><p>Selects item <code>&lt;input&gt;</code> in focus</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>hover</a>      </td>
+      <td>a:hover</td>
+      <td><p>Selects the link to which the cursor is given.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>id</a>      </td>
+      <td>#firstname</td>
+      <td><p>Selects an item with id = "firstname"</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>in-range</a>     </td>
+      <td>input:in-range</td>
+      <td><p>Selects items<code>&lt;input&gt;</code>  with a value in the allowed range.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>inside-element</a>     </td>
+      <td>div p</td>
+      <td><p>Selects all items <code>&lt;p&gt;</code> in <code>&lt;div&gt;</code> </p>
+</td>
+    </tr>
+        <tr>
+      <td><a>invalid</a>     </td>
+      <td>input:invalid</td>
+      <td><p>Selects all input elements with non-validated value.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>lang</a>     </td>
+      <td>p:lang(it)</td>
+      <td><p>Selects each item <code>&lt;p&gt;</code> with lang attribute "it" (Italian)</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>last-child</a>     </td>
+      <td>p:last-child</td>
+      <td><p>Selects item <code>&lt;p&gt;</code>, which is the last descendant of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>last-of-type</a>     </td>
+      <td>p:last-of-type</td>
+      <td><p>Selects the last element of his parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>link</a>      </td>
+      <td>a:link</td>
+      <td><p>Selects all links that have not yet been passed.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>multielement</a>      </td>
+      <td>div, p</td>
+      <td><p>Selects all items <code>&lt;div&gt;</code> and all elements <code>&lt;p&gt;</code>.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>not</a>     </td>
+      <td>:not(p)</td>
+      <td><p>Selection of elements that do not contain the specified selector.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>nth-child</a>     </td>
+      <td>p:nth-child(2)</td>
+      <td><p>Selects item <code>&lt;p&gt;</code>,if it is the second element of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>nth-last-child</a>      </td>
+      <td>p:nth-last-child(2)</td>
+      <td><p>Selects each item <code>&lt;p&gt;</code>, which is the second descendant of its parent, starting at the end.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>nth-last-of-type</a>      </td>
+      <td>p:nth-last-of-type(2)</td>
+      <td><p>Selects each item <code>&lt;p&gt;</code>, which is the second <code>&lt;p&gt;</code> of its parent from the end.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>nth-of-type</a>     </td>
+      <td>p:nth-of-type(2)</td>
+      <td><p>Selects each item<code>&lt;p&gt;</code>,that is second <code>&lt;p&gt;</code> element of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>only-child</a>      </td>
+      <td>p:only-child</td>
+      <td><p>Selects item <code>&lt;p&gt;</code>,  if it is the sole descendant of its parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>only-of-type</a>     </td>
+      <td>p:only-of-type</td>
+      <td><p>Selects each item <code>&lt;p&gt;</code>, which is the only <code>&lt;p&gt;</code> element of this type of parent.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>optional</a>     </td>
+      <td>input:optional</td>
+      <td><p>Selection of <code>&lt;input&gt;</code> elements without the "required" attribute.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>out-of-range</a>      </td>
+      <td>input:out-of-range</td>
+      <td><p>Selection of all <code>&lt;input&gt;</code> elements in which the value entered is outside the allowed range.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>placeholder</a>     </td>
+      <td>input[type="text"]::placeholder</td>
+      <td><p>Changes the tooltip style for the <code>&lt;input&gt;</code> text box!</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>read-only</a>      </td>
+      <td>input:read-only</td>
+      <td><p>Selects <code>&lt;input&gt;</code> elements that have the "readonly" attribute.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>read-write</a>      </td>
+      <td>input:read-write</td>
+      <td><p>Selects <code>&lt;input&gt;</code> elements that do not have a "readonly" attribute specified.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>required</a>      </td>
+      <td>input:required</td>
+      <td><p>Selection of mandatory <code>&lt;input&gt;</code> elements.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>root</a>      </td>
+      <td>:root</td>
+      <td><p>Вибирає кореневий елемент документа</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>selection</a>     </td>
+      <td>::selection</td>
+      <td><p>Selects the root element of the document</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>sibling</a>     </td>
+      <td>p ~ ul</td>
+      <td><p>Selects all items <code>&lt;ul&gt;</code>  that are in front of the element <code>&lt;p&gt;</code></p>
+</td>
+    </tr>
+        <tr>
+      <td><a>target</a>     </td>
+      <td>#news:target</td>
+      <td><p>Selects the currently active element that has the attribute id = "news"</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>valid</a>     </td>
+      <td>input:valid</td>
+      <td><p>Selects all input elements with a valid value.</p>
+</td>
+    </tr>
+        <tr>
+      <td><a>visited</a>      </td>
+      <td>a:visited</td>
+      <td><p>Selects links that have already been transitioned</p>
+</td>
+    </tr>
+      </tbody>
+</table>
+
+</main>
+<footer>&copy; HTML and CSS</footer>
+</body>
+</html>

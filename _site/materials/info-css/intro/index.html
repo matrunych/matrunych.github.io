@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML and CSS</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">HTML and CSS</a>
+  <a href="/about-html/" class="link--about">HTML</a>
+  <a href="/about-css" class="link--about">CSS</a>
+
+  <a href="/About" class="link--about">About me</a>
+</header>
+<main>
+  <article>
+  <h1>What is CSS?</h1>
+  <img src="https://forwww.com/wp-content/uploads/2019/11/css-illustration.png.pagespeed.ce.MVaraOOVG-.png" alt="HTML5 Icon" width="128" height="128">
+  <!-- Excerpt Start -->
+<!-- Excerpt End -->
+
+<p><strong>CSS or Cascading Style Sheets</strong> is a technology that allows you to create beautiful, convenient and responsive website designs. It is also responsible for formatting, presentation and layout.</p>
+
+<p>
+The main reason we use <strong>CSS</strong> is not only because it allows us to create flexible, convenient sites, but also because it allows us to keep the design separate from the content, which is very convenient. Сreating websites and understanding HTML will be easier for a person if he is not burdened with styles.</p>
+
+
+<div id="toc_container" class="toc_container"><ul class="toc_list">
+  <li><a href="#-CSS">A bit of history</a></li>
+  <li><a href="#-CSS-2">Selectors, Properties, and Values</a></li>
+  <li><a href="/materials/info-css/selector/">More about selectors</a></li>
+    <li><a href="#CSS-4">What is Flexbox?</a></li>
+
+    <li><a href="/materials/info-css/flexbox/">Flexbox layout</a></li>
+
+  </ul></div>
+
+
+
+<h2><span id="-CSS">A bit of History</span></h2>
+<p>CSS was first introduced in 1996 and then could change fonts, colors, layout and distance between elements. In 2004, CSS 2.1 added layout and positioning. The current CSS standard is CSS3, which is also capable of creating transition effects, animations, and resizing. Modern browsers support CSS3, but there are a few "oldies," such as IE8 that does not support all the available features.</p>
+
+<p>You need only text editor to start writing CSS, because CSS is just a text file. If you save it as a separate file, which is recommended, then .css permission is used. Thus, your first CSS file will be called approximately “main.css”. If you have a fairly simple site, then you will not need more than one file. But in some cases it’s worth creating several files to store the code in a more orderly manner. Then it’s better to put the CSS files in the Styles folder or just “CSS”.</p>
+
+<p>You need to attach your stylesheet to HTML, otherwise it will not work. This is done using the link element in the head element of your HTML. Here is an example of a link element:</p>
+
+
+&lt;link&gt; rel = "stylesheet" type = "text / css" href = "main.css">
+
+<p>The <i>rel</i> attribute tells the browser how it relates to HTML. Remember to specify the location of your CSS correctly. Our file is located in the same directory as the HTML file, so we do not need to tell the browser to change the directory. But if your CSS file was stored somewhere else, then you need to register the path to the file here.</p>
+
+<h2><span id="-CSS-2">Selectors, Properties, and Values</span></h2>
+<p>The term that defines the appearance of a site is always “style” or “styles”. Styles are defined using specific rules. To find the element in HTML, you should use the selector, and then the property-value bunch to set the element to the desired parameters. The selector tells the browser where to apply the rule. The body selector finds the body element in HTML. The code below will give the whole body element a red color:
+</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+body {<br>
+<br>background-color: red;<br>
+<br>}
+</span></code></td></tr></tbody></table>
+
+<p>It is important to pay attention to punctuation as well as braces. All values ​​that you want to change for the selector must be in braces. After the property, there should always be a colon, and after specifying the value - a semicolon. If any of these three elements is missing, your CSS will not display correctly.</p>
+
+<p>There are dozens of different properties for styling HTML. Background color, layout, transparency, and font size are just some of them. You can find a great list of properties on the W3C.</p>
+<p>You can add multiple properties for a single selector. This is very convenient because you can write code without repetition. If you know that you want to make the body element not only with a red background, but also with a width of 1200 pixels, you can include all this in one selector, like this:</p>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+body {<br>
+<br>background-color: red;<br>
+<br>width: 1200px;
+<br>
+<br>}
+</span></code></td></tr></tbody></table>
+
+<p>You can also set the same style for different selectors at the same time, simply by putting a comma between them before putting an opening brace. This is how the code will look if we want all the headers to have the same style and color:
+</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+h1, h2, h3, h4, h5, h6 {<br>
+<br>font-style: cursive;<br>
+<br>color: red;<br>
+<br>}
+</span></code></td></tr></tbody></table>
+
+
+
+<br><p><strong>Adding styles</strong></p>
+<p>You can write styles directly in HTML without creating CSS. But adding styles directly to HTML, without separating them with a CSS file, you will create a lot of difficulties for yourself in the future. If you want to change something simple, for example, the color of the text, you will need to change the HTML code on each page, instead of changing one parameter in CSS. The great advantage of using CSS is the ability to easily experiment with different designs. In addition, it will be easier for you to work with HTML, since in it you will focus only on the content of the site.</p>
+
+<p>Still, it’s possible to add CSS styles to HTML by placing them in &lt;head&gt;.</p>
+
+<p>You can go to &lt;head&gt;and add a style value to the style element, like this:</p>
+
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+    &lt;style&gt;<br>
+<br>background-color: red;
+<br>
+<br>width: 1200px;
+<br>
+<br>}&lt;/style&gt;<br>
+</span></code></td></tr></tbody></table>
+
+
+
+<p><strong>External style sheets</strong></p>
+<p>External style sheets are connected using a separate file with the extension .css and the <link> tag, which is “embedded” in the HTML document. For example:</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;Title &lt;/title&gt;<br>
+      <<kbd>link</kbd> rel = "stylesheet" type = "text/css" href = "style.css"><br>
+      &lt;/head&gt;
+      &lt;/html&gt;<br>
+</span></code></td></tr></tbody></table>
+
+<p><strong>Internal style sheets</strong></p>
+
+<p>Internal style sheets are “included” in the HTML document, and are used for this style attribute. For example:</p>
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;Title &lt;/title&gt;<br>
+      &lt;/head&gt;
+      &lt;body&gt;
+      <<kbd>h1</kbd> style="color:red">&lt;/h1&gt;<br>
+      &lt;/body&gt;
+      &lt;/html&gt;<br>
+</span></code></td></tr></tbody></table>
+
+
+<p><strong>Inline Style Sheets</strong></p>
+<p>Built-in stylesheets are “written” in the header of the HTML document. For example:</p>
+
+<table class="code"><tbody><tr><td>
+<code><span class="white">
+      &lt;html&gt;<br>
+      &lt;head&gt;<br>
+      &lt;title&gt;Title &lt;/title&gt;<br>
+      <<kbd>style</kbd> type="text/css"><br>
+      h1{<br>
+  "color:read"<br>
+    }<br>
+          &lt;/style&gt;<br>
+
+      &lt;/head&gt;<br>
+      &lt;body&gt;<br>
+      &lt;h1&gt; Hello!&lt;/h1&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;<br>
+</span></code></td></tr></tbody></table>
+
+
+
+</article>
+</main>
+<footer>&copy; HTML and CSS</footer>
+</body>
+</html>
